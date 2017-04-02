@@ -17,7 +17,12 @@ button, p, input {
 	margin: 10px;
 }
 
-
+h1 {
+	font-family: 'Comic Sans MS', 'Comic Sans MS5', cursive, Helvetica, sans-serif;
+	color: white;
+	font-size: 45px;
+	text-align: left;
+}
 
 p {
 	/*text-decoration-line: white;*/
