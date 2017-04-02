@@ -11,21 +11,24 @@ topicsButtons();
 
 // Take the strings in the topics array and create a button for each
 function topicsButtons() {
+
+  $("#topics").html("");
   for (i = 0; i < topics.length; i++) {
     // create a new row for each 4 buttons
     if ((i % 4 === 0) && (i > 0)) {
       $("#topics").append("<div>") 
     }
 
+    $("#topics").append("<button data-wb='" + topics[i] + "'>" + topics[i]);
     // All rows except the first don't have a special input field.
-    if ((i % 4 != 0) || (i === 4))  {
-      $("#topics").append("<button data-wb='" + topics[i] + "'>" + topics[i]);
-    }
-    // The first row has an input field.
-    else {
-      $("#topics").append("<button data-wb='" + topics[i] + "'>" + topics[i] + "</button>" +
-        "<p>Input field: <input type='text' id='addButton' value=''>");
-    }
+    // if ((i % 4 != 0) || (i === 4))  {
+    //   $("#topics").append("<button data-wb='" + topics[i] + "'>" + topics[i]);
+    // }
+    // // The first row has an input field.
+    // else {
+    //   $("#topics").append("<button data-wb='" + topics[i] + "'>" + topics[i] + "</button>" +
+    //     "<p>Input field: <input type='text' id='addButton' value=''>");
+    // }
   }
 
 
