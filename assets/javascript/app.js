@@ -34,7 +34,7 @@ function topicsButtons() {
     // Test to see if a WB button and not the submit button
     if (typeof wb !== typeof undefined && wb !== false) {
       
-      var queryURL = "http://api.giphy.com/v1/gifs/search?q=" +
+      var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
         wb + "&api_key=dc6zaTOxFJmzC&limit=10";
 
       // Performing an AJAX request with the queryURL
